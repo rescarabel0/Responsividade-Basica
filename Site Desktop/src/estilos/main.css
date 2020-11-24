@@ -1,0 +1,469 @@
+/* fontes customizadas */
+
+@font-face {
+    font-family: Fonte-main;
+    src: url(../../../fontes/segoeuil.ttf);
+}
+@font-face {
+    font-family: Fonte-main2;
+    src: url(../../../fontes/segoeui.ttf);
+}
+
+body {
+    font-family: Fonte-main2;
+}
+
+/* imagem inicial */
+#inicio {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+
+#inicio div#up-title {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    height: inherit;
+    color: white;
+    font-family: Fonte-main;
+    transition: ease-out 1s all;
+}
+
+#inicio div#up-title p#title {
+    font-size: 80px;
+    font-weight: 900;
+}
+#inicio div#up-title p {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#inicio img#background {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+#inicio div#up-title button {
+    padding: 15px 32px;
+    background-color: #00a4ef;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#inicio div#up-title button:hover {
+    background-color: #077eb4;
+}
+
+#inicio div#up-title i {
+    font-size: 75px;
+    cursor: pointer;
+    transition: all 1s ease-out;
+    margin-top: 25%;
+}
+#inicio div#up-title i:hover {
+    color: lightgray;
+}
+
+
+/* prágrafos de texto abaixo da imagem */
+section.container {
+    text-align: center;
+    padding: 5px;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 25px;
+    color: #6c6c6c;
+}
+
+section.container p span {
+    color: orangered;
+}
+
+/* caixas coloridas */
+div.main-content-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    color: #6c6c6c;
+}
+
+div.main-content-title h2{
+    color: #1d578d;
+    font-size: 40px;
+}
+
+.articles-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 5vh;
+}
+
+.article {
+    flex-basis: 45%;
+    flex-grow: 1;
+    padding: 15px;
+    background-color: lime;
+    color: white;
+}
+
+.article h4 {
+    line-height: 0.5;
+}
+
+.article img {
+    float: left;
+    margin-top: 2.4vh;
+    position: relative;
+    margin-right: 1.2vw;
+}
+
+#article-1 {
+    background: #0072c6;
+}
+
+#article-2 {
+    background: #2c5898;
+}
+
+#article-3 {
+    background: #207245;
+}
+#article-4 {
+    background: #cb4a32;
+}
+#article-5 {
+    background: #733781;
+}
+#article-6 {
+    background: #00aff0;
+}
+#article-7 {
+    background: #094ab2;
+}
+#article-8 {
+    background: #0073c6;
+}
+#article-9 {
+    background: #0093be;
+}
+#article-0 {
+    background: #5558af;
+}
+
+
+/* ícones com texto abaixo */
+div.second-title h2 {
+    color: #1d578d;
+    text-align: center;
+    font-size: 40px;
+}
+
+.icons-content {
+    margin-left: 23%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+.icon-text p {
+    width: 47%;
+    text-align: center;
+    margin-left: -4px;
+    color: #6c6c6c;
+    font-size: 18px;
+}
+.icon-text h3 {
+    margin-left: 13px;
+}
+.circulo {
+    width: 170px;
+    height: 170px;
+    float: left;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    margin-right: 13vw;
+    margin-bottom: 20px;
+}
+
+.circulo img {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.circulo#circle-3 img {
+    margin-top: 50px;
+}
+
+#circle-1 {
+    background-color: #7fba00;
+}
+
+#circle-2 {
+    background-color: #00a4ef;
+}
+#circle-3 {
+    background-color: #ffb900;
+}
+
+.icon-text hr {
+    height: 1px;
+    border: 0;
+    border-top: 5px solid #dedede;
+    padding: 0;
+    margin-right: 14.9vw;
+    margin-left: 2vw;
+    transition: all 1s ease-out;
+}
+
+.icon-button {
+    width: 30%;
+    background: none;
+    margin: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.icon-button#botao-1 {
+    border: 2px solid #5d8801;
+    color: #5d8801;
+}
+
+.icon-button#botao-2 {
+    border: 2px solid #0080bb;
+    color: #0080bb;
+}
+
+.icon-button#botao-3 {
+    border: 2px solid #c59100;
+    color: #c59100;
+}
+
+.icon-button#botao-1:hover {
+    background: #5d8801;
+    color: white;
+}
+
+.icon-button#botao-2:hover {
+    background: #0080bb;
+    color: white;
+}
+
+.icon-button#botao-3:hover {
+    background: #c59100;
+    color: white;
+}
+
+#subtitle-1 {
+    color: #7fba00;
+}
+
+#subtitle-2 {
+    color: #00a4ef;
+}
+
+#subtitle-3 {
+    color: #ffb900;
+}
+
+/* tabela */
+.third-title h2 {
+    color: #1d578d;
+    text-align: center;
+    font-size: 40px;
+}
+.table {
+    overflow-x: auto;
+    margin-bottom: 100px;
+}
+.table table{
+    border: 3px solid lightgrey;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+.table td {
+    border: 1px solid lightgrey;
+    color: #6c6c6c;
+    font-size: 18px;
+    padding: 30px;
+}
+.table td h3 {
+    color: orangered;
+}
+
+/* imagem com texto central */
+.crowd-pic img {
+    filter: brightness(37%);
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: 50% 60%;
+    display: block;
+}
+
+.crowd-text {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 13%;
+    font-size: 40px;
+    color: white;
+    width: 75%;
+}
+
+.text-image {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+/* formulario */
+.form-title {
+    text-align: center;
+    margin: auto;
+}
+.form-title p {
+    font-size: 25px;
+    color: #6c6c6c;
+}
+
+.formulario {
+    width: 25%;
+    margin: auto;
+    margin-bottom: 200px;
+    border: none;
+    background-color: #e6e6e6;
+    padding: 80px;
+    height: 410px;
+}
+
+.formulario label {
+    cursor: pointer;
+    font-size: 14px;
+    color: #6c6c6c;
+}
+
+.formulario .textbox {
+    width: 100%;
+    padding: 20px 20px;
+    border: none;
+    margin: 5px 0;
+    outline: none;
+    color: #6c6c6c;
+    font-size: 18px;
+}
+
+.form-box:focus-within label {
+    color: #2974b8;
+}
+
+.textbox:focus {
+    border: 2px solid #2974b8;
+}
+
+.formulario button {
+    width: 90%;
+    margin-left: 10%;
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    background: #00a4ef;
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+    align-items: center;
+}
+
+.formulario form {
+    margin-left: -45px;
+    margin-top: -50px;
+}
+
+/* logos finais */
+.end-logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.final p{
+    text-align: center;
+    color: #b6b6b6;
+}
+
+/* aspectos de responsividade */
+@media screen and (max-width: 1380px) {
+    #inicio div#up-title i {
+        font-size: 5vw;
+        margin-top: 20%;
+    }
+    .icon-text {
+        width: 50%;
+    }
+    .icon-text hr {
+        width: 10em;
+    }
+    .icon-text p {
+        margin-left: 0;
+    }
+    #inicio div#up-title p#title {
+        font-size: 6vw;
+        font-weight: 900;
+    }
+    #inicio div#up-title p {
+        font-size: 2vw;
+        font-weight: 500;
+    }
+    #inicio div#up-title button {
+        font-size: 3vw;
+    }
+    #inicio div#up-title {
+        top: 8%;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    #inicio div#up-title i {
+        margin-top: 10%;
+    }
+    .icon-text {
+        margin-left: 10%;
+        width: 100%;
+    }
+    .table {
+        margin: 10px;
+    }
+    .crowd-text {
+        font-size: 5vw;
+    }
+    
+}

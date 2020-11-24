@@ -1,0 +1,97 @@
+@font-face {
+    font-family: Fonte-header;
+    src: url(../../../fontes/segoeui.ttf);
+}
+
+header {
+    background-color: #2571b7;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-shrink: 2;
+}
+
+#logo {
+    padding-left: 5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#logo img {
+    height: auto;
+    width: 145px;
+}
+
+#navbar {
+    font-family: Fonte-header;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    margin-left: auto;
+    transition: all 1s ease-out;
+}
+#navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+}
+
+#navbar li a#tainted {
+    background-color: #002e58;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 550;
+}
+
+@media screen and (max-width: 928px){
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    .menu {
+        cursor: pointer;
+        padding: 5px;
+        background: #1d578d;
+    }
+
+    #navbar li a#tainted {
+        padding: 0;
+        background: inherit;
+    }
+
+    #navbar {
+        margin-right: 100px;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #2571b7;
+        padding-top: 15px;
+        height: 28vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 20% -10%);
+        -webkit-clip-path: circle(1000px at 20% -10%);
+        pointer-events: all;
+    }
+}
